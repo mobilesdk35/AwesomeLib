@@ -37,7 +37,7 @@ dependencies {
 bintray {
     user = 'mobilesdk'
     key = '8ef388c445a03f1f694487829e6889dc2c991d73'
-    publications = ['MavenPub']
+    publications = ['customPublication']
     configurations = ['archives']
     pkg {
         repo = 'AwesomeLibriary'
@@ -89,7 +89,7 @@ project.afterEvaluate {
         }*/
 
         publications {
-            MavenPub(MavenPublication) {
+            customPublication(MavenPublication) {
                 groupId = ' com.mobile.awesomelib'
                 artifactId = 'AwesomeLibriary'
                 version = '1.0.2'
